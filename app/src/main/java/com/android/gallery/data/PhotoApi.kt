@@ -1,4 +1,4 @@
-package com.android.gallery
+package com.android.gallery.data
 
 import retrofit2.Call
 import retrofit2.http.GET

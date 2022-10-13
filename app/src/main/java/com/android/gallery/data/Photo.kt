@@ -1,4 +1,4 @@
-package com.android.gallery
+package com.android.gallery.data
 import com.google.gson.annotations.SerializedName
 data class Photo(
     @SerializedName("id")
@@ -6,7 +6,7 @@ data class Photo(
     @SerializedName("description")
     var description:String?,
     @SerializedName("urls")
-    var urls:Urls,
+    var urls: Urls,
     @SerializedName("user")
-    var user:User
+    var user: User
 )

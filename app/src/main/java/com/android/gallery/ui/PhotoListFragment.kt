@@ -10,8 +10,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.gallery.Photo
+import com.android.gallery.data.Photo
 import com.android.gallery.R
 import com.android.gallery.databinding.FragmentPhotoListBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -32,7 +31,7 @@ private val photoListViewModel: PhotoListViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        photoListViewModel.photoList.observe(viewLifecycleOwner){
+        photoListViewModel.photoList.observe(viewLifecycleOwner) {
             val adapter = PhotoListAdapter(this)
             adapter.submitList(it)
             binding.recyclerView.adapter = adapter

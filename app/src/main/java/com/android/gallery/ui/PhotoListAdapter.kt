@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.android.gallery.Photo
+import com.android.gallery.data.Photo
 import com.android.gallery.R
 import com.bumptech.glide.Glide
 

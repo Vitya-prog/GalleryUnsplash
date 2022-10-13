@@ -1,5 +1,6 @@
-package com.android.gallery
+package com.android.gallery.di
 
+import com.android.gallery.data.PhotoApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,7 +21,7 @@ class ApiModule {
             .build()
     }
     @Provides
-    fun providePhotoApi(retrofit: Retrofit):PhotoApi{
+    fun providePhotoApi(retrofit: Retrofit): PhotoApi {
         return retrofit.create(PhotoApi::class.java)
     }
 

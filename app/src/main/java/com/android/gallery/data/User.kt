@@ -1,4 +1,4 @@
-package com.android.gallery
+package com.android.gallery.data
 
 import com.google.gson.annotations.SerializedName
 

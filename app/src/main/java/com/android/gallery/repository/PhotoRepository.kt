@@ -1,8 +1,10 @@
-package com.android.gallery
+package com.android.gallery.repository
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.android.gallery.data.Photo
+import com.android.gallery.data.PhotoApi
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
